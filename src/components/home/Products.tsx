@@ -1,6 +1,7 @@
 import { Stud, Ret, Comm, Fm, Corp, Pers } from "@/assets/icons";
 import React from "react";
 import ProductCard from "./ProductCard";
+import { Button } from "../ui/button";
 
 export default function Products() {
 	return (
@@ -13,9 +14,9 @@ export default function Products() {
 				<ProductCard title={"Family"} image={Fm} alt="Family" />
 				<ProductCard title={"Personal"} image={Pers} alt="Family" />
 			</div>
-			<button className="hidden sm:block text-sm border border-primaryBlue bg-white text-primaryBlue md:px-5 md:py-1 sm:px-3 sm:py-1 mt-14 hover:transition-all hover:duration-350 hover:bg-primaryBlue hover:text-white">
+			<Button className="hidden h-full sm:block text-sm border border-primaryBlue bg-white text-primaryBlue md:px-5 md:py-1 sm:px-3 sm:py-1 mt-14 hover:transition-all hover:duration-350 hover:bg-primaryBlue hover:text-white">
 				Request a Quote
-			</button>
+			</Button>
 		</section>
 	);
 }

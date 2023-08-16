@@ -1,6 +1,7 @@
 import StdImage from "@/components/atoms/StdImage";
 import MenuDesktopLinks from "./MenuDesktopLinks";
 import { Tel } from "@/assets/icons";
+import { Button } from "@/components/ui/button";
 
 export default function MenuDesktop() {
 	return (
@@ -26,12 +27,12 @@ export default function MenuDesktop() {
 					height="30"
 					alt="Telephone"
 				/>
-				<button className="text-xs font-bold border border-primaryBlue bg-white text-primaryBlue hover:bg-primaryBlue hover:text-white lg:px-5 md:px-3 md:py-1 sm:px-3 sm:py-1">
+				<Button className="text-xs h-full font-bold border border-primaryBlue bg-white text-primaryBlue hover:bg-primaryBlue hover:text-white lg:px-5 md:px-3 md:py-1 sm:px-3 sm:py-1">
 					Log in
-				</button>
-				<button className="text-xs bg-primaryBlue text-white lg:px-5 md:px-3 md:py-1 sm:px-3 sm:py-1 font-bold">
+				</Button>
+				<Button className="text-xs h-full bg-primaryBlue hover:bg-primaryBlue text-white lg:px-5 md:px-3 md:py-1 sm:px-3 sm:py-1 font-bold">
 					Register
-				</button>
+				</Button>
 			</div>
 		</div>
 	);
